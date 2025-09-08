@@ -1,0 +1,154 @@
+ body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.6),
+          rgba(0, 0, 0, 0.6)
+        ),
+        url('fantasy.jpg'); /* fantasy image with dark overlay */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      margin: 0;
+      padding: 40px 0 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    h1 {
+      font-size: 26px;
+      margin-bottom: 30px;
+      color: #ffda88; /* warm golden */
+      text-align: center;
+      position: absolute;
+      top: 20px;
+      left: 0;
+      right: 0;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+    }
+
+    form {
+      background-color: rgba(30, 30, 30, 0.85); /* dark semi-transparent */
+      padding: 25px 30px;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+      width: 100%;
+      max-width: 360px;
+      display: flex;
+      flex-direction: column;
+      margin-top: 100px;
+    }
+
+    label {
+      font-size: 14px;
+      font-weight: 600;
+      margin: 10px 0 5px;
+      color: #f5f5f5;
+    }
+
+    input[type="text"],
+    input[type="email"] {
+      padding: 10px;
+      border: 1px solid #444;
+      background-color: #222;
+      color: #fff;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    input[type="text"]::placeholder,
+    input[type="email"]::placeholder {
+      color: #aaa;
+    }
+
+    button[type="submit"] {
+      background-color: #f39c12; /* fantasy gold/orange */
+      color: #1a1a1a;
+      padding: 10px;
+      border: none;
+      border-radius: 6px;
+      font-size: 15px;
+      font-weight: bold;
+      margin-top: 15px;
+      cursor: pointer;
+      transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #e67e22;
+      transform: scale(1.05);
+      box-shadow: 0 4px 12px rgba(255, 165, 0, 0.4);
+    }
+
+    /* === Table styling === */
+table {
+  border-collapse: collapse;
+  width: 80%;
+  max-width: 900px;
+  background-color: rgba(30, 30, 30, 0.85); /* dark translucent */
+  color: #f5f5f5; /* light text like form */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.1); /* subtle white lines */
+}
+
+th {
+  background-color: rgba(0, 123, 255, 0.8); /* fantasy-themed semi-transparent blue */
+  color: #fff;
+}
+
+tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.05); /* very light alternate row */
+}
+
+tr:hover {
+  background-color: rgba(255, 255, 255, 0.08); /* hover effect for rows */
+}
+
+table {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+a {
+  display: inline-block;
+  margin: 5px;
+  text-decoration: none;
+  color: #007BFF;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* === "Create Record" button-style link === */
+a[href*="create"] {
+  margin-top: 20px;
+  background-color: #28a745;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 6px;
+  text-align: center;
+  text-decoration: none;
+  transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+a[href*="create"]:hover {
+  background-color: #218838;
+  transform: scale(1.1);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+}
